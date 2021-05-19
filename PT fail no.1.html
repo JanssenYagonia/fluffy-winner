@@ -1,0 +1,215 @@
+<!-- Date of creation: 5/19-->
+<html>
+    <head>
+        <title>Yagonia</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+        <!------ CSS Stylesheets ------>
+        <link rel="icon" href="assets/ic/dbtc.png">
+        <link rel="stylesheet" href="css/page.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/timeline.css">
+        <link rel="stylesheet" href="css/util.css">
+        <link rel="stylesheet" href="css/darkmodeswitch.css">
+        <link rel="stylesheet" href="css/keyframes.css">
+        <!----------------------------->
+
+        <!------ Fonts: Monsterrat, Quicksand & Open Sans Stylesheets ------>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap" rel="stylesheet">
+        <!----------------------------->
+
+        <!------ Fontawesome Stylesheet for Icons ------>
+        <script src="https://kit.fontawesome.com/594d35bb81.js" crossorigin="anonymous"></script>
+        <!----------------------------->
+
+        <!------ Animate.css ------>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!----------------------------->
+
+
+
+        <link rel="preload" href="js/main.js" as="script">
+    </head>
+    <body>
+      <!-- A preloader is needed because if we refresh with our current 'dark mode' theme it's not smooth-->
+      <div class="preloader" id="preload">
+        <div class="preloader-wrapper">
+          <div class="loading"></div>
+        </div>
+        <div class="padding-md"></div>
+        <div class="preloader-text">
+          <h1 class="font--montserrat" style="text-align: center; color: var(--dark);" id="preloader-text"></h1>
+          <div class="padding-sm"></div>
+          <h3 class="font--quicksand" style="text-align: center; color: var(--dark);" id="preloader-subtext"></h1>
+        </div>
+        <span id="loading_bar" style="display: flex; justify-content: center; text-align: center; position: absolute; bottom: 0; width: 0%; height: 5px; background: var(--hgradient);">
+        </span>
+      </div>
+        <grid-display id="grid-display">
+            <header>     
+                <div id="navbar-1" class="navbar-flex">
+                  <div class="padding-sm"></div>
+                  <i class="fas fa-bars fa-2x responsive_sidebar_icon" onclick="open_sidebar();"></i>
+                  <div class="padding-sm"></div>
+                    <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="opt_color">
+                          <input type="checkbox" id="opt_color" onclick="opt_color();"/>
+                          <div class="slider round"></div>
+                      </label>
+                      <p class="font--quicksand" style="color: var(--dark); padding-left: 10px;">Dark Mode</p>
+                    </div>
+                    <div class="right-margin disappear"></div>
+                    <div class="right-margin disappear"></div>                     
+                      <a href=#about class="hoverable font--montserrat" id="topnav"> Contact</a> 
+                    <div class="right-margin disappear"></div>   
+                      <a href=#details class="hoverable font--montserrat" id="topnav"> Details</a>
+                    <div class="right-margin disappear"></div>
+                      <a href=#firstpart class="hoverable font--montserrat" id="topnav"> Home</a>
+                    <div class="right-margin disappear"></div>
+                      <h1 class="dbtc font--montserrat">M</h1>
+                </div>
+            </header>
+            <sidebar id="sidebar">
+                <div id="navbar-2" class="sidebar-flex">
+                    <img class="closebtn" src="assets/ic/x.png" onclick="close_sidebar();">
+                    <a href="#firstpart" class="font--montserrat">Home</a>
+                    <a href=#details class="font--montserrat">Details</a>
+                    <a href=#contacts class="font--montserrat">Contacts</a>
+                    <a href=#about class="font--montserrat">About</a>
+                </div>
+            </sidebar> 
+            <page id="page">
+                <div class="firstpart" id="firstpart">
+                    <div class="intro">
+                        <div class="intro_text">
+                          <div class="animate__animated animate__fadeInDown">
+                            <h1 class="font--montserrat">Janssen Niño<div class="other_half">Yagonia.</div></h1>
+                          </div>
+                            <i class="fab fa-facebook-square fa-xs" onclick="window.location='https://www.facebook.com/nino.yagonia.7'"></i>                         
+                            <i class="fab fa-instagram fa-xs" onclick="window.location='https://www.instagram.com/janssen.yagonia/'"></i>                         
+                          <div class="padding"></div>
+                        </div>
+                    </div>             
+                  </div>
+                </div>
+                <a name="details">
+                    <div class="details_section">
+                    <div class="details_wrapper center_content">
+                        <div class="details_0">
+                            <h1 class="title_text font--montserrat">Hello.</h1>
+                            <hr class="horizontal" style="width: 50%">
+                            <div class="padding-sm"></div>
+                            <div class="timeline">
+                                <div class="container">
+                                  <div class="content">
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Name</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">My name is Janssen Niño T. Yagonia.</p>
+                                  </div>
+                                </div>
+                                <div class="padding-sm"></div>
+                                <div class="container">
+                                  <div class="content">
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Age</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">I'm currently 14 years old.</p>
+                                  </div>
+                                </div>
+                                <div class="padding-sm"></div>
+                                <div class="container">
+                                  <div class="content">
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Personality</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">I am a happy, kind of lazy and quiet. Its kind of funny how I chill knowing I have a lot of tasks to do.</p>
+                                  </div>
+                                </div>
+                                <div class="padding-sm"></div>
+                                <div class="container">
+                                  <div class="content">
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Gender</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">I am a male and I don't really like disrespecting other people's gender.</p>
+                                  </div>
+                                </div>
+                                <div class="padding-sm"></div>
+                                <div class="container">
+                                  <div class="content">
+                                    <h2 class="font--montserrat" style="color: var(--lighter)">Date of Birth</h2>
+                                    <p class="font--quicksand" style="color: var(--lighter)">I was born on October 14, 2006.</p>
+                                  </div>
+                                </div>                
+                        </div>       
+                    </div>
+                    <div class="padding-xlg"></div>
+                    <div class="details_1">            
+                        <h1 class="title_text font--montserrat">Hobbies & Interests.</h1>
+                        <hr class="horizontal" style="width: 20%;">
+                        <div class="padding-sm"></div>
+                        <p class="subtext-title font--quicksand">I have a lot of hobbies and interests, I might not be able to show all</p>
+                        <ul class="details_ul font--quicksand">
+                            <li>I like classical music, it really <span style="color: var(--darker);">calms my mind.</span></li>
+                            <li>I play only one video game and that is <span style="color: var(--darker);">Minecraft.</span></li>
+                            <li>I always have tasks to do so instead I <span style="color: var(--darker);">chill.</span></li>
+                        </ul>  
+                        <div class="padding-xxlg"></div>
+                    </div>
+                    </div>
+                </a>
+                <a name="contacts"> <!-- Reuse details section class because I'm lazy -->
+                  <div class="details_section" style="background-color: var(--light);">
+                    <div class="padding"></div>
+                    <div class="contacts_wrapper"> 
+                      <div class="container-wrapper">
+                        <div class="contacts-container">
+                            <h1 class="title_text-rev font--montserrat" style="color: var(--fb);">Facebook</h1>
+                            <hr class="horizontal" style="width: 50%;">
+                            <div class="padding-sm"></div>
+                            <p class="subtext-title-rev font--quicksand">This is my facebook account. This is where I spend most of my time.</p>
+                        </div>
+                          <div class="padding-sm"></div>
+                        <div class="contacts-container">             
+                        </div>   
+                          <div class="padding-sm"></div>    
+                        <div class="contacts-container">
+                          <h1 class="title_text-rev font--montserrat" style="color: var(--ig);">Instagram</h1>
+                          <hr class="horizontal" style="width: 50%;">
+                          <div class="padding-sm"></div>
+                          <p class="subtext-title-rev font--quicksand">In here you can see all my weird pictures. Follow me to see more pics :>></p>   
+                        </div> 
+                      </div>
+                      <div class="padding"></div>
+                      <div class="links-wrapper">
+                          <div class="link-container"><button class="link_button" onclick="window.location='https://www.facebook.com/nino.yagonia.7'">Facebook</button></div>
+                            <div class="padding-sm "></div>
+                            <div class="padding-sm "></div>
+                          <div class="link-container"><button class="link_button" onclick="window.location='https://www.instagram.com/janssen.yagonia/'">Instagram</button></div>
+                      </div>            
+                    </div>
+                    <div class="padding"></div>
+                  </div>
+                </a>
+                <a name="about">
+                    <div class="about_section center_content" style="text-align: center;">
+                      <div class="padding-md"></div>
+                      <h1 class="subtext-title font--montserrat" >by Janssen Niño T. Yagonia</h1>
+                      <h1 class="subtext-title font--montserrat" >from 9 - Calasanz</h1>
+                      <div class="padding-sm"></div>
+                      <span style="display: flex; justify-content: center;">
+                        <i class="fab fa-facebook-square fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-discord fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-instagram fa-lg" style="color: var(--dark);"></i><div class="padding-md"></div>
+                        <i class="fab fa-github fa-lg" style="color: var(--dark);"></i>
+                      </span>
+                      <div class="links-wrapper">
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.facebook.com/nino.yagonia.7'">Facebook</p><div class="padding-sm"></div>
+                       
+                        <p style="color: var(--darker); width: fit-content;" class="gradient_underline subtext-title font--quicksand" onclick="window.location='https://www.instagram.com/janssen.yagonia/'">Instagram</p><div class="padding-sm"></div>
+                      </div>
+                    </div>
+                </a>
+            </page>
+            <script src="js/main.js" defer></script>
+            <script src="js/preloader.js" defer></script>
+        </grid-display>
+    </body>
+</html>
